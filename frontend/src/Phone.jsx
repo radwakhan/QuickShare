@@ -1,6 +1,10 @@
+
 import { useState, useRef, useEffect } from "react";
 import { io } from "socket.io-client";
 import { useParams } from "react-router-dom";
+
+const BACKEND_URL =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 function Phone() {
     const { sessionId } = useParams();
@@ -27,7 +31,7 @@ function Phone() {
             return;
         }
 
-        const socket = io("http://localhost:3000");
+        const socket = io(BACKEND_URL);
 
         socketRef.current = socket;
 

@@ -1,9 +1,9 @@
-const BACKEND_URL =
-    import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 import { useState, useRef, useEffect } from "react";
 import { io } from "socket.io-client";
 import { QRCodeSVG } from "qrcode.react";
+const BACKEND_URL =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 function Home() {
     const [sessionId, setSessionId] = useState("");
