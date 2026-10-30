@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f5f6fa;
+color: #202124;
+}
+
+.app {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 70px 20px 30px;
+}
+
+.header {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.header h1 {
+font-size: 42px;
+margin-bottom: 10px;
+}
+
+.header p {
+color: #666;
+}
+
+.container {
+width: 100%;
+max-width: 650px;
+}
+
+.drop-area {
+background: white;
+border: 2px dashed #b8b8c8;
+border-radius: 16px;
+padding: 55px 20px;
+text-align: center;
+transition: 0.2s;
+}
+
+.drop-area.dragging {
+border-color: #6255e7;
+background: #f0efff;
+}
+
+.upload-icon {
+font-size: 45px;
+color: #6255e7;
+margin-bottom: 15px;
+}
+
+.drop-area h2 {
+margin-bottom: 10px;
+}
+
+.drop-area p {
+color: #777;
+}
+
+.browse-button {
+display: inline-block;
+background: #6255e7;
+color: white;
+padding: 13px 28px;
+border-radius: 8px;
+cursor: pointer;
+margin: 15px 0;
+}
+
+.browse-button:hover {
+background: #5043cf;
+}
+
+.file-info {
+font-size: 13px;
+margin-top: 15px;
+}
+
+.file-card {
+background: white;
+padding: 18px;
+margin-top: 20px;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+}
+
+.file-card h3 {
+font-size: 15px;
+overflow-wrap: anywhere;
+}
+
+.file-card p {
+color: #777;
+}
+
+.file-card button {
+background: #ffecec;
+color: #d33;
+border: none;
+padding: 9px 15px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+footer {
+margin-top: auto;
+padding-top: 45px;
+color: #777;
+font-size: 13px;
+text-align: center;
+}
