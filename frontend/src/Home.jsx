@@ -1,3 +1,6 @@
+const BACKEND_URL =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+
 import { useState, useRef, useEffect } from "react";
 import { io } from "socket.io-client";
 import { QRCodeSVG } from "qrcode.react";
@@ -169,7 +172,7 @@ function Home() {
 
         setStatus("Connecting to server...");
 
-        const socket = io("http://localhost:3000");
+        const socket = io(BACKEND_URL);
 
         socketRef.current = socket;
 
